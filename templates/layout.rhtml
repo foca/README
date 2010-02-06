@@ -1,17 +1,30 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml">
+    <link rel="home" type="text/html" title="README.txt" href="/">
     <title><%= title %></title>
   </head>
   <body>
+    <header>
+      <h1><a href="/" rel="home">README.txt</a></h1>
+      <h2>musings by a random guy</h2>
+    </header>
     <section>
       <%= yield %> 
     </section>
     <footer>
       powered by <a href="http://cloudhead.io/toto">toto</a>
+      <address>&copy;2010 by <a href="http://nicolassanguinetti.info"><%= author %></a></address>
     </footer>
+
+    <div id="github-badge">
+      <a href="http://github.com/foca">
+        <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+      </a>
+    </div>
   </body>
 </html>
 

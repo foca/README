@@ -30,7 +30,6 @@ header, footer, section, article {
   font-style: italic;
   float: right;
   line-height: 43px;
-  margin-right: 30px;
 }
 a {
   color: #b83000;
@@ -43,11 +42,16 @@ a:hover {
   text-decoration: underline;
 }
 body > header > h1 {
-	border-left: 30px solid black;
-	padding-left: 30px;
-  font-size: 201px;
-  margin: 100px 0 15px 0;
+  padding: 0;
+  font-size: 72px;
+  font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
   font-weight: normal;
+}
+body > header > h2 {
+  display: block;
+  margin: -30px 0 30px;
+  padding: 0;
+  line-height: 1;
 }
 .post header {
 	margin-bottom: 10px;
@@ -69,7 +73,6 @@ body > header > h1 {
 }
 .post .more {
   margin-top: -10px;
-  margin-right: 30px;
   font-style: italic;
   text-align: right;
 }
@@ -78,10 +81,11 @@ body > header > h1 {
 }
 .more a:hover { text-decoration: underline }
 body > header {
-	display: block;
-	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
+  display: block;
+  line-height: 90px;
+  text-align: center;
+  border-bottom: 1px solid #888;
+  margin-bottom: 36px;
 }
 h1, h2, h3, h4 {
   display: inline;
@@ -104,7 +108,16 @@ blockquote {
 body > footer {
   text-align: left;
   margin-left: 10px;
-	font-style: italic;
+  font-style: italic;
   font-size: 18px;
   color: #888;
+}
+body > footer address {
+  float: right;
+}
+
+#github-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

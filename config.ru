@@ -7,11 +7,8 @@ use Rack::CommonLogger
 
 # Run application
 toto = Toto::Server.new do
-  #
-  # Add your settings here
-  # set [:setting], [value]
-  #
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :author, "Nicolás Sanguinetti"
+  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal}, %Y") }
 end
 
 run toto
