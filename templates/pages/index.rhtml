@@ -9,7 +9,9 @@
       <section class="content">
         <%= article.summary %>
       </section>
+      <% if article.summary != article.body %>
       <div class="more"><a href="<%= article.path %>">read on &rarr;</a></div>
+      <% end %>
     </article>
   <% end %>
 </section>
